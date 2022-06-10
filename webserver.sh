@@ -39,3 +39,10 @@ echo "Status of HTTPD service is:"
 echo "######################################################"
 sudo systemctl status httpd
 
+
+echo "######################################################"
+echo "Private IP address of the machine to view hosted web page is:"
+echo "######################################################"
+ifconfig | grep "inet 192.*" | grep -v grep
+
+
